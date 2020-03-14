@@ -1,0 +1,23 @@
+.font_1 {
+    background-color: black;
+    color: yellow;
+    font-size: large;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.font_2 {
+    background-color: darkblue;
+    color:white;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+.mystyle2forward{
+    background-color: blueviolet;
+    color:white;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: small;
+}
