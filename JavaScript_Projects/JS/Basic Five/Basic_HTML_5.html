@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <p id="typeof"></p>
+
+        <p id="nAn" onclick="testOne()">Click Here!</p>
+
+        <p id="positiveInfinity" onclick="testTwo()">Click Here!</p>
+
+        <p id="negativeInfinity" onclick="testThree()">Click Here!</p>
+10E4
+        <p id="postInfinity" onclick="infinityPostNumber()">Click Here!</p>
+
+        <p id="negInfinity" onclick="infinityNegNumber()">Click Here!</p>
+
+        <p id="curiosInfinity" onclick="infinityCurios()">Click Here!</p>
+        
+        <p>Is 7 Greater Than 5?</p>
+        <button onclick="greaterThan7()">Answer</button>
+        <p id="answerOne"></p>
+
+        <p>Are they the same? 25 == 20 + 5</p>
+        <button onclick="showTrue1()">Answer</button>
+        <p id="showingTrue"></p>
+        <br>
+        <p>Are they the same? 100 == 1000</p>
+        <button onclick="showFalse1()">Answer</button>
+        <p id="showingFalse"></p>
+
+<h1>Fun Time!</h1>
+<p>I know this isn't part of the course but I wanted to have some fun anyways! Their will be more of this to come :)!</p
+    >
+
+        <form>
+            <fieldset>
+                <legend>Double and Triple Equals</legend>
+                <label for="ANDop">Is this true? 5 greater than 2 && 11 less than 9</label><br>
+                <input type="text" id="ANDop" name="Results1"  value=""> <br>
+                <label for="ORop">Is this False? 7 > 10 || 10 >5</label><br>
+                <input type="text" id="ORop" name="Results1"  value="">
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>NOT Operator</legend>
+                <p>Will this return true? 20 Over 10</p>
+                <button onclick="returnFalse()">Check!</button><input type="text" id="returnFalseValue" value="">
+
+                <p>Will this return false? 4 Over 10</p>
+                <button onclick="returnTrue()">Check!</button><input type="text" id="returnTrueValue" value="">
+            </fieldset>
+            
+
+
+        </form>
+
+        <script src="Basic_JavaScript_5.js"></script>
+    </body>
+</html>
