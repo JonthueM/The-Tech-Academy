@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../myStyle.css">
+    </head>
+    <body>
+        
+        
+        <fieldset>
+            <legend>Concating Strings</legend>
+            <label for="sum1">Complete Sentence</label><br>
+
+            <button class="buttonStyle" onclick="fullSen()" id="sum1">Click Here</button><input type="text" id="sum1revealed" value="" readonly>
+        </fieldset>
+<br>
+        <fieldset>
+            <legend>Splice String Method</legend>
+            <label for="splice">Splicing A Sentence</label><br>
+            <button id="splice" onclick="spliceThis()">Click here!</button> <input type="text" value="" id="aPieces" readonly>
+        </fieldset>
+<br>
+<br>
+<br>
+        <fieldset>
+            <legend>The Uppercaser!</legend>
+            <input type="text" id="requestOne" value="Insert word or sentence"> <button onclick="generateUppercased()">Generate</button> <input id="submit2" type="text" value="" readonly>
+        </fieldset>
+
+<br>
+<br>
+<br>
+
+        <fieldset>
+            <legend>Numbers Method</legend>
+            <p>Insert Number Below!</p>
+            <input type="text" id="num"> <button onclick="num2String()">Click Here!</button> <input type="text" id="valueShown" value="" readonly>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+
+    <fieldset>
+        <legend>TOPRECISION() METHOD </legend>
+        <p>This will formats a number to a specified length which in this case is 3</p>
+         <button onclick="num2Three()">Click Here!</button> <input type="text" id="valueShown2" value="" readonly>
+    </fieldset>
+    <br>
+    <br>
+    <br>
+    <fieldset>
+        <legend>toFixed() Method And valueOf</legend>
+        <p> 700.800 is the actual value</p>
+        <button onclick="toFixed()">Click Here!</button><input id="value2Show" type="text" value="" readonly><br><br>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>ValueOff</legend>
+        <button onclick="valueOf()">Click Here!</button><p id="value2Show2"></p>
+
+    </fieldset>
+    
+        <script src="Basic_JavaScript_8.js"></script>
+    </body>
+</html>
