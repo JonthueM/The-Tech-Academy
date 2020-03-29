@@ -1,6 +1,6 @@
-alert("It's working");
+alert("Basic JS 2");
 
-	
+//Assignment 60 Concation 	
 function displayBirthDate() {
   var name = "Jonthue";
   var birth = "November 18";
@@ -8,6 +8,7 @@ function displayBirthDate() {
 document.getElementById("demo").innerHTML = birthDate;
 }
 
+//Assignment 62	
 function myFunction() {
   var sentence = "I like to";
   sentence += " eat vegan food!";

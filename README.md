@@ -1,5 +1,5 @@
 # The-Tech-Academy
-[Assignment](#todo)
+[ASSIGNMENTS](#assignment  &amp; Projects) | [TODO](#todo) 
 
 NOTE: This is steadliy being updated and Improved. Most of the files are named according to the lesson number to make it easier for teachers to 4 Below is an TOC of assignments & challenges. 
 
@@ -8,7 +8,11 @@ NOTE: This is steadliy being updated and Improved. Most of the files are named a
 
 HTML & CSS | Description | JavaScript | Description
 -----------|-------------|------------|-------------
-1 Test | 2 Test  | 3 Test | 4 Test
+1 Test | 2 Test  | Basic JavaScript 1 | Print Simple Formula
+| | Basic JavaScript 2 | Concate & += Operator
+| | Basic JavaScript 3 | Basic Math Operations
+| | Basic JavaScript 4 |
+| | Basic JavaScriot 5 | Typeof, NAN, Infinity and...
 
 
 ## Todo
@@ -23,8 +27,8 @@ Past Assignment to fix and other things
 - [ ] Review and Correct HTML CSS Page 367
 - [ ] Review and Correct HTML CSS Page 367
 - [ ] Review and Correct HTML CSS Page 419
-- [ X ] Review and Correct JS Page 58
-- [ ] Review and Correct JS Page 63
+- [X] Review and Correct JS Page 58
+- [X] Review and Correct JS Page 63
 - [ ] Review and Correct JS Page 115
 - [ ] Review and Correct JS Page 128
 - [ ] Review and Correct JS Page 139

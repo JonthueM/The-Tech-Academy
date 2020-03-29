@@ -48,6 +48,11 @@ var Crazy = new House("Orange","Hut", 2, "Rental");
  var Me = new fruit("Apple", "break");
     document.getElementById("passOrFail").innerHTML = Me.fruit_Region;
 
+    function interestingResponse(){
+        var reservedWords = Boolean;
+        document.getElementById("passOrFail").innerHTML = reservedWords;
+    }
+
     function Nested_Function(){
         document.getElementById("Nested_Answer").innerHTML = math();
         function math(){
