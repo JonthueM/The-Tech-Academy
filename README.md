@@ -23,7 +23,7 @@ Past Assignment to fix and other things
 - [ ] Review and Correct HTML CSS Page 367
 - [ ] Review and Correct HTML CSS Page 367
 - [ ] Review and Correct HTML CSS Page 419
-- [ ] Review and Correct JS Page 58
+- [ X ] Review and Correct JS Page 58
 - [ ] Review and Correct JS Page 63
 - [ ] Review and Correct JS Page 115
 - [ ] Review and Correct JS Page 128
