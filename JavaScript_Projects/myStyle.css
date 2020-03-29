@@ -1,6 +1,13 @@
+body::before {
+    filter: brightness(25%);
+}
+
 body {
+    background-image: url(../JS/img/programming-1873854.png);
+    background-blend-mode: darken;
     background-color: #292a2d;
     color: white;
+
 }
 
 p {
