@@ -2,7 +2,7 @@ alert("Everything id connected!");
 //Counting Strings
 function stringCount() {
     var string = "Hello World!";
-    var count = string.length;
+    var count = string.length; //.length displays number of characters
     document.getElementById("countString").innerHTML = count;
 
 }

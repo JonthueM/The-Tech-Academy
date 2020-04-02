@@ -64,4 +64,4 @@ function returnFalse(){
 
 function returnTrue(){
     document.getElementById("returnTrueValue").innerHTML = !(4>10);
-}
+} 
