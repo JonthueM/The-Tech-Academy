@@ -1,5 +1,5 @@
 # The-Tech-Academy
-[ASSIGNMENTS](#assignment  &amp; Projects) | [TODO](#todo) 
+[ASSIGNMENTS](#assignment) | [TODO](#todo) 
 
 NOTE: This is steadliy being updated and Improved. Most of the files are named according to the lesson number to make it easier for teachers to 4 Below is an TOC of assignments & challenges. 
 
