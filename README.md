@@ -32,6 +32,7 @@ Past Assignment to fix and other things
 - [ ] Review and Correct JS Page 115
 - [ ] Review and Correct JS Page 128
 - [ ] Review and Correct JS Page 139
+- [ ] Review and Correct JS Page 262
 
 ### Track
 - [ ] Finish JavaScript
