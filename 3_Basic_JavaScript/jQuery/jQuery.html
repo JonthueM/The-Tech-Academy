@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+<script>
+    // From the video with and a little extra
+    $(document).ready(function() {
+        $("html").append(
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+                <fieldset>\
+                    <legend>On and off</legend>\
+                    <button>Click Here</button>\
+                    <p id='toggleMe'>Hello World</p>\
+                </fieldset>\
+            </body>"
+        );
+        $("#2").css({"color":"red"});
+        $("#3").click(function() {
+            $('h1').hide();
+        });
+        $("button").click(function(){
+            $("#toggleMe").toggle(1000);
+        });
+    });
+
+    // Event setup using a convenience method
+$( "#1" ).click(function() {
+    console.log( "You clicked a paragraph!" );
+});
+( "p" ).show( "slow" );
+</script>
+</html>
