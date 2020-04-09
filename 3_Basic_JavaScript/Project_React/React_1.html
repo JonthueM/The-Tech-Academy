@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://fb.me/react-0.14.3.min.js"></script> <script src="https://fb.me/react-dom-0.14.3.min.js"></script>
+        <!--I decided to use this CDN to verify what the problem was. I find this solution for this problem '__SECRET_DOM_DO_NOT_USE_OR_YOU_WILL_BE_FIRED' of undefine-->
+    </head>
+    <body>
+
+  
+
+        <div id="response"></div>
+        
+        <script>
+            alert('okay');   
+            var Counter = React.createClass({
+                render: function() {
+                    var time_Passed = Math.round(this.props.time_Passed / 100);
+                    var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0');
+                    var text = 'My React code started running' +
+                        seconds_Passed + 'seconds ago!';
+                    return React.DOM.p(null, text);
+                }
+            });
+
+            var counter_Factory = React.createFactory(Counter);
+
+            var start_Counting = new Date().getTime();
+            setInterval(function() {
+                ReactDOM.render(
+                    counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+                    document.getElementById('response')
+                );
+            }, 50);
+
+
+
+        </script>
+        
+
+    </body>
+</html>

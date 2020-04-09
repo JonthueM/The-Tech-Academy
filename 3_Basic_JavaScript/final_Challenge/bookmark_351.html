@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            
+            html {scroll-behavior: smooth;}
+
+            *{margin: 0; padding: 0;}
+            body{
+                color: white;
+                text-align: center;
+               
+            }
+            ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    height: 40px;
+                    position: fixed;
+                    
+                }
+                a {
+                    float: left;
+                    display: block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                li {
+                    display: inline;
+                }
+            h1{
+                padding-top: 250px;
+                size: 250px;
+            }
+
+            .sectionStyle{
+                width: 100%;
+                height: 600px !important;
+                margin: 0 !important;
+                ;
+               
+            }
+            #backgroundBlue{ background-color: blue; }
+            #backgroundBlack {background-color: black;}
+            #backgroundRed{background-color: red;}
+        </style>
+    </head>
+    <body>
+
+        <ul class="overlay">
+            <li><a href="#s1">Section One</a></li>
+            <li><a href="#s2">Section Two</a></li>
+            <li><a href="#s3">Section Three</a></li>
+         </ul>
+
+
+        <div class="sectionStyle" id="backgroundBlue">
+            <h1 id="s1">Section One</h1>
+        </div>
+        <div class="sectionStyle" id="backgroundBlack">
+            <h1 id="s2">Section Two</h1>
+        </div>
+        <div class="sectionStyle" id="backgroundRed">
+            <h1 id="s3">Section Three</h1>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

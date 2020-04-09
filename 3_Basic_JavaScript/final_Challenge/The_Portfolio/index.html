@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Jonthue Portifolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="Portfolio.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!-- We use a little bit of jQuery on this site now -->
+</head>
+
+
+<!-- Body -->
+<body class="Background"> 
+    <!-- Fade in effect -->
+    <script> <!-- This script and function controls our fade in effect -->
+      document.body.className += ' fade-out';
+        $(function() {
+          $('body').removeClass('fade-out');
+        }
+      );
+    
+    </script>
+<!-- NAVBAR -->
+
+   <div class="Navbar">
+		<a class="active" href="#home">Home</a> 
+		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
+		<a href="#about">About</a>
+        <a href="#gitHub">GitHub</a>
+        
+		|<a onclick="openForm()" id="form2">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
+	</div>
+<!-- END OF NAVBAR -->
+<!--  -->
+<div class="btn cancel" onclick="closeForm()">
+ 
+  <!-- VIDEO -->
+  
+    <div id="home">
+        <br>
+        <br>
+        <video loop muted autoplay id="Fixed_Video">
+            <source src="assets/video.mp4" type="video/mp4">
+            Your broswe does not support the video tag.
+        </video>
+    </div>
+<!-- VIDEO END -->
+
+<!-- OVERLAY TEXT -->
+    <div class="Text_Overlay"> 
+		<img src="assets/jonthueM-logoWhiten.png" class="centerImage">
+			<p id="about"> 
+				<strong>
+					<center>
+						<q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+						<br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+						<br>field of battle and to command such unswervingly dutiful actors or troops.
+						</q>	
+						<br>-Joseph Weizenbaum<br>
+						<br>
+						My name is Jonthue Michel. Welcome to my portfolio website. On it, I will tell you about my background and experience.<br>
+						<br>Thank you for stopping by and have fun! 
+					</center>	
+				</strong>
+			</p> 
+	</div>
+<!-- END OF OVERLAY -->
+<!-- Slideshow Section-->
+
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+      <div id="Slideshow_Container">
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">1 / 6</div>
+            <img class="Slide_Show_Images" src="assets/slideshow/me.jpg" style="width:100%">
+              <div class="text">I'm available to assist you on your project!</div>
+        </div>
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">2 / 6</div>
+            <img class="Slide_Show_Images" src="assets/slideshow/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">3 / 6</div>
+            <img class="Slide_Show_Images" src="assets/slideshow/Python.png" style="width:100%">
+              <div class="text">the popular programming language Python,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">4 / 6</div>
+            <img class="Slide_Show_Images" src="assets/slideshow/C_Sharp_and_Dot_NET.png" style="width:100%">
+              <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+        </div>
+
+		<div class="mySlides fade">
+	      <div class="Slide_Number">5 / 6</div>
+			<img class="Slide_Show_Images" src="assets/slideshow/SQL_and_Database.jpg" style="width:100%">
+              <div class="text">back end development, databases and SQL.</div>
+			</div>
+
+		<div class="mySlides fade">
+		  <div class="Slide_Number">6 / 6</div>
+			<img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+			  <div class="text"> 
+				<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+			  </div>
+	    </div>
+	
+		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+		
+	  </div>
+  <br>
+
+      <div style="text-align:center">
+ 
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+		<span class="dot" onclick="currentSlide(6)"></span> 
+
+      </div>
+    </div>
+  </div>
+
+<!--End of Slideshow-->
+<!--JS Slideshow-->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+<!--End of JS Slideshow-->
+<!--ABOUT SECTION  -->
+
+    
+    <div class="row">
+        <div class="Column_Two" id="about">
+            <img src="assets/my%20MSI-%20Laptop.jpg" alt="My laptop MSI" class="curve imgStyle">
+        </div>
+           
+        <div class="Column_One">
+             <h1>About</h1>
+            <p>I am a software developer who loves to code! As a Teacher of Meditation and Meditation, I enjoy doing meditation and hosting vegan events.
+                <br>
+            I am a graduate of <a href="https://www.learncodinganywhere.com/">The Tech Academy's</a>Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                <br>
+            I am a full-stack developer and would love to work with you on your project.<a href="#contact">Contact</a> me below!</p>
+        </div>
+    </div>
+    
+<!-- END OF ABOUT -->
+<!-- GITHUB SECTION -->
+     <div class="row">
+        <div class="Column_One">
+            <h1 id="githubSection">Github</h1>
+            <p>You can view my coding projects on my GitHub profile here:</p>
+            <center><a id="Github_link" href="https://github.com/JonthueM/The-Tech-Academy" target="_blank">    The Tech Academy Github</a></center>
+        </div>
+        <div class="Column_Two">
+            <img src="assets/github1.jpeg" class="curve imgStyle">
+        </div>
+    </div>
+<!-- END OF GITHUB -->
+<!-- CONTACT SECTION -->
+<div id="Contact"> 
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+	  <div class="form-popup" id="myForm">
+	    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+		<h1>Contact</h1>
+			<label for="name"><b>Name</b></label>
+			  <input type="text" placeholder="Type your name here" name="name" required>
+			<label for="phone"><b>Phone</b></label>
+			  <input type="text" placeholder="Enter your phone number here" name="phone">
+			<label for="email"><b>Email</b></label>		
+			  <input type="text" placeholder="Type your email address here" name="email" required>
+			<label for="message"><b>Message</b></label>
+			  <input type="text" placeholder="Type your message here" name="message">
+ 
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+	    </form>
+	  </div>
+  </div>
+</div>
+<!-- COEND OF NTACT SECTION -->
+<!-- FOOTER SECTION -->
+    <footer>
+        <P>
+            <center>Jonthue Michel,  <a href="https://jonthuemichel.com/">Software Developer</a></center><br>
+
+        </P>
+    </footer>
+<!--END OF  FOOTER SECTION -->
+
+	<script type="text/javascript" src="Portfolio.js"></script>
+</body>
+
+</html>

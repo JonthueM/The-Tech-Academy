@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <p id="XML_Example"></p>        
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+
+            var Halo = "<Halo>" +
+            "<title>The Discovery<title>"+
+            "<character>The Master Chief</character>"+
+            "<sidekick>Cortana</sidekick>";
+
+            //create an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Halo,"text/xml");
+
+            document.getElementById("XML_Example").innerHTML =
+            XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue; 
+
+        </script>
+    </body>
+</html>

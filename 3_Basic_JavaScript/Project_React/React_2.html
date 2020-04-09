@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <!--I had spent nearly hours trying to figure out what is wrong with this program, then my brain was like check the console and so I checked the console then from console to Google and I find out
+            the the problem wasesn't the code but the CDN. The Error was this 
+            "Uncaught Error: Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings."
+            And the solution was to use this CDN which didn't have the crossorigin
+        -->        
+
+
+
+    </head>
+    <body>
+        <div id="like_button_container"></div>        
+        <script>
+            ///Decided to use this CDN because
+            const X = React.createElement;
+
+            class likeButton extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.state = { liked:false};
+                }
+                render() {
+                    if (this.state.liked) {
+                        return 'You clicked the like button!';
+                    }
+                return X (
+                    'button',
+                    { onClick: () => this.setState ({liked: true}) },
+                    'Like'
+                ) ;
+                }
+            }
+
+            const domContainer =document.querySelector('#like_button_container');
+            ReactDOM.render(X(likeButton), domContainer);
+
+        </script>
+
+    </body>
+</html>

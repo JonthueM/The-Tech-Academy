@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+            #slideshow{
+                margin: 50px auto;
+                position: relative;
+                width: 240px;
+                height: 240px;
+                padding: 10px;
+                box-shadow: 0 0 20px rgba(red, green, blue, 0.4);
+            }
+
+            #slideshow > div {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
+            img{
+                width: 240px;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="slideshow">
+            <div>
+                <img src="slideShow_Asset/cake-3946227_1920.jpg">
+            </div> 
+            <div>
+                <img src="slideShow_Asset/glasgow-4923527_1920.jpg">
+            </div>
+            <div>
+                <img src="slideShow_Asset/pear-flower-4903458_1920.jpg">
+            </div>
+        </div>
+        
+        <script>
+
+            $("slideshow > div:gt(0)").hide();
+
+            setInterval(function() {
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+
+        </script>
+    </body>
+</html>

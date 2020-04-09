@@ -1,0 +1,49 @@
+
+body {
+    background-image: url("programming-1873854.png");
+    background-blend-mode: darken;
+    background-color: #292a2d;
+    color: white;
+
+}
+
+#vw{
+    font-size: 10vw;
+}
+
+fieldset {
+    margin-top: 15%;
+    margin-bottom: auto;
+    width: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+button {
+    background-color: #799dd7;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+input[type=submit]{
+    background-color: #799dd7;
+    border: none;
+    color: rgba(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 4px;
+    border-radius: 3px;
+}
+
+table, th, td{
+    border: 1px solid #666;
+}
+table th, table td{
+    padding: 10px;
+}
