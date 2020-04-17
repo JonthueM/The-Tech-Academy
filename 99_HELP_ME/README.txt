@@ -1,0 +1,1 @@
+This is the folder containing files for the instructor to review and aid in solving bugs pertaining to lessons. Of course this is a last resort thing.
