@@ -13,6 +13,7 @@ body {
 }
 
 .menu-container {
+    margin-top: 0;
 	top:0;
 	left: 0;
 	/* To the top edge of the screen */
@@ -29,18 +30,24 @@ body {
 	padding: 0;
 	list-style: none;
 }
+li{
+    padding: 20px 60px;
+    color: white;
+    border: 1px solid white;
+}
 
 .menu li {
-	color:#B3B3B3;
 	display: inline-block;
 	margin-right: -2px;
 	position: relative;
-	paddng: 12px 40px;
-	border: 1px solid #387593;
+
+    border-color: whit
 	border-radius: 1.5px;
-	background-color: #387593;
+	background-color: #387573;
 	cursor: pointer;
 }
+
+/*  	paddng: 12px 40px;*/
 
 .menu li:hover {
 	background-color: #5EAFDF;
@@ -55,11 +62,11 @@ body {
 }
 
 .submenu {
-	pading:0;
+	padding:0;
 	left:0;
 	position: absolute;
-	top: 43.5px;
-	width: 125.5px;
+	top: 60.9px;
+	width: 178.9px;
 	opacity:0;
 	/*while not being hovered, drop down-menu hides this also avoids a block-level bug*/
 	visibility: hidden;
@@ -68,6 +75,8 @@ body {
 .submenu li {
 	background-color: #387593;
 	display: block;
-	color: #B3B3B3;
+	color: white;
 }
-
+body{
+    background-color: #244350;
+}
