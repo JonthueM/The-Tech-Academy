@@ -18,6 +18,11 @@ body {
     background-color: #fff;
 }
 
+input[submit]{
+    background-color: black !important;
+    color: white !important;
+}
+
 footer, nav { display: block;}
 
 h1, h2, h3, h4, h5, h6 {
@@ -172,9 +177,14 @@ section {
     /* This ensures that the image cannot render outside of their container without forciing any scrollbars */
     overflow: hidden;
     top: 0;
-    top: 0;
+    margin-top: 30px;
     text-align: center;
 
+}
+form{
+    background-color: #eadce2 !important;
+    padding: 10px;
+    width: 550px
 }
 
 .menu-container {
@@ -189,6 +199,13 @@ section {
     z-index: 100;
     
     /*background-color: rgba(255,255,255,0.5);*/
+}
+
+input[type=submit]{
+    background-color: black !important;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 7px;
 }
     /*================================
     HOME SECTION STYLES
@@ -257,6 +274,7 @@ section {
 
     }
 
+
     #contact{
         background-color: #f5f3f3;
     }
@@ -269,6 +287,7 @@ section {
         background-color: rgba(100, 65, 0,0.3);
         box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 5);
     }
+
 
     .reservation h2 {
         width: 70%;
@@ -355,6 +374,8 @@ section {
         display: inline;
         float:right;
             }
+
+
 
         .terms:hover {
             color: orange;
