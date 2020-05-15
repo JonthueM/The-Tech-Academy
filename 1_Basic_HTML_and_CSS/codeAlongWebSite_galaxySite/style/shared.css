@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+ul a {
+    text-decoration: none !important;
+    padding-top: 330px !important;
+}
+
 h1 {
     line-height: 50px;
     font-weight: 900;
@@ -102,6 +107,12 @@ section {
         height: 169px;
     }
 
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+}
+
     .photo-overlay {
         color: #fff;
         position: absolute;
@@ -174,6 +185,9 @@ section {
     left 0; */
     /* position: aboluste; */ /* to the top edge of the screen */
     width: 100%;
+    position: fixed;
+    z-index: 100;
+    
     /*background-color: rgba(255,255,255,0.5);*/
 }
     /*================================
@@ -181,7 +195,7 @@ section {
     ===========================+=====*/
 
     #home { 
-        background:url(../images/planets.jpg);
+        background:url(../images/planets.jpg) no-repeat 50% 50%;
         background-attachment: fixed;
         -webkit-background-size:cover;
         -moz-background-size: cover;

@@ -1,11 +1,6 @@
 CREATE DATABASE School300;
 USE School300
-CREATE TABLE Classes (
- Class_ID INT PRIMARY KEY  NOT NULL IDENTITY (1,1),
-
- Class_Name varChar(255),
-
-);
+ 
 
 	ALTER TABLE Classes
     NOCHECK CONSTRAINT Class_ID;
@@ -53,14 +48,15 @@ SELECT * FROM Students;
 ALTER TABLE Students NOCHECK CONSTRAINT ALL;
 
 	UPDATE Students Set Instructor_ID = 1 Where Student_Name = 'Fries';
-	UPDATE Students Set Instructor_ID = 1 Where Student_Name = 'Fries';
-	UPDATE Students Set Instructor_ID = 1 Where Student_Name = 'Fries';
+	UPDATE Students Set Instructor_ID = 1 Where Student_Name = 'Bun';
+	UPDATE Students Set Instructor_ID = 1 Where Student_Name = 'Colesaw';
 
-	UPDATE Classes Set Instructor_ID = 2 Where  = 'Pumpkin';
-	UPDATE Classes Set Instructor_ID = 2 Where Class_Name = 'Pumpkin';
-	UPDATE Classes Set Instructor_ID = 2 Where Class_Name = 'Pumpkin';
+	UPDATE Students Set Instructor_ID = 2 Where Student_Name = 'Pumpkin';
+	UPDATE Students Set Instructor_ID = 2 Where Student_Name = 'Taco';
+	UPDATE Students Set Instructor_ID = 2 Where Student_Name = 'Cheese';
+	
 
-ALTER TABLE Classes WITH CHECK CHECK CONSTRAINT ALL;
+ALTER TABLE Students WITH CHECK CHECK CONSTRAINT ALL;
 
 
 ALTER TABLE MyTable NOCHECK CONSTRAINT ALL
