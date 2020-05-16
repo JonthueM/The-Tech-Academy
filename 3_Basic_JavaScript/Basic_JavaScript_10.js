@@ -6,6 +6,18 @@ function stringCount() {
     document.getElementById("countString").innerHTML = count;
 
 }
+// Loops
+function Call_Loop(){
+    var count = "";
+    var i = 0;
+    while(i < 11) {
+        count +=  "<br> "+i;
+        i++
+    }
+    
+    document.getElementById("Loop").innerHTML =count;
+}
+
 //For Loop
 var Instruments = ["Guitar", "Drums", "Piano", "Bass","Violin","Trumpt","Flute"];
 var Content = "";
