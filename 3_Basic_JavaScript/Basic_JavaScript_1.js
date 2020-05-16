@@ -1,12 +1,15 @@
-//Assignment Step 54 
 
-var addition = 3 + 3;
-document.getElementById("formula").innerHTML = addition;
+var first = "Hello";
+var Words = " World!";
 
-//Copied this from step 57
+
+var common = first + Words;
+
+alert(common)
+
+//Assignment 59
 
 function My_First_Function() {
-	var str = "This text is green!";
-	var result = str.fontcolor("green");
-document.getElementById("Green_Text").innerHTML = result;
+	var result = common.fontcolor("black");
+document.getElementById("Black_Text").innerHTML = result;
 }
