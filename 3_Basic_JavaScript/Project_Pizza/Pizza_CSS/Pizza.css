@@ -1,66 +1,81 @@
-#menuBG {
-    width: 400p;
-    height: 470px;
-margin-left: 35%;
-margin-top: 20%;
-}
-
-#frmMenu {
-    width: 400px;
-    height: 200px;
-}
-
-#totalPice{
-    width: 200px;
-    height: 190px;
-    margin: 0 auto;
-    float: right;
-}
-.left{
-    width: 200px;
-    height: 200px;
-    float: left;
-}
-.right {
-    width: 200px;
-    height: 200px;
-    float: right;
-}
-#showText{
-    width: 200px;
-    height: 190px;
-    margin: 0px auto;
-    float: left;
-}
-
-
-#cart {
-    top: 0; margin: 0px auto;
-    width: 400px;
-    height: 200px;
-}
-
-#btnOrder {
-    margin: 10px 0px 0px 100px;
-    width: 100px;
-    height: 40px;
-}
-
 body {
-    background-color: black;
+	background-color: darkblue;
 }
 
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white !important;
+	font-family: Helvetica;
+	color: white;
+	text-align: center;
+}
+h3 {
+	font-family: Arial;
+	color: snow;
 }
 
-h3{
-    color: white;
+div {
+	color: lightyellow;
+    font-family: Monospace;
 }
-div{
-    color: white;
-}
-p {
-    color: white;
+#menuBG {
+	width:400px;
+	height:470px;
+	margin:10px auto;
+    margin-top: 5%;
+	}
+
+#frmMenu {
+	width:600px;
+	height:200px;
+	}
+
+#totalPrice {
+	width:200px;
+	height:190px;
+	margin:20px auto;
+	float:right;
+	}
+
+.left {
+	width:200px;
+	height:200px;
+	float:left;
+	}
+
+.center {
+	width:200px;
+	height:200px;
+	float:left;
+	}
+	
+.right {
+	width:200px;
+	height:200px;
+	float:right;
+	}
+
+#showText {
+	width:200px;
+	height:190px;
+	margin:0px auto;
+	float:left;
+	}
+		
+#cart {
+	top:0;margin:0px auto;
+	width:400px;
+	height:200px;
+    }
+	
+#btnOrder {
+	margin:10px 0px 0px 100px;
+	width:100px;
+	height:40px;
+	display: block;
+	margin: 25px auto;
+	}
+
+body {
+    
+     background: 
+    linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45) ),   url('pizza-329523_1920.jpg');
 }
