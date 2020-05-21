@@ -50,8 +50,10 @@ def testPrint1(self):
 def Automatize(self):
     self.status.insert(END,"Automatizing .")
     for filename in os.listdir(self.Source.get()):
+        filename = os.path.join(self.Source.get(), filename)
         if (filename.endswith(".txt")):
-            shutil.move(filename, self.Destination.get())
+            shutil.move(self.Source.get(), self.Destination.get())
+            self.status.insert(END,". . Done!")
 '''          
     self.status.insert(END,"Automatizing .")
     if self.Source.get().endswith(".txt"):
