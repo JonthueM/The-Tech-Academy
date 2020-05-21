@@ -2,13 +2,9 @@ alert("Ok!!!");
 
 //creates an object to keep track of values
 const Calculator = {
-    // this is displays 0 on the screen
     Display_Value: '0',
-    //this will hold the first operand for any expressions, we set to null for now
     First_Operand: null,
-    // this check whether or not the second operand has been input
     Wait_Second_Operand: false,
-    // this will hold the operatpr, we set it to null for now
     operator: null,
 };
 
@@ -78,7 +74,10 @@ const Perform_Calculation = {
 
     '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
 
-    '+': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
+    '+': (First_Operand, Second_Operand) => First_Operand + Second_Operand,
+    
+    '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
+
 
     '=': (First_Operand, Second_Operand) => Second_Operand
 };
@@ -106,25 +105,20 @@ keys.addEventListener('click', (event) => {
     if (!target.matches('button')){
         return;
     }
-    if (target.classList.contains('operator')){
-        Handle_Operator(target.value);
-        Update_Display;
-        return;
-    } 
-    if (target.classList.contains('decimal')) {
+    if (target.classList.contains('operator')) {
         Handle_Operator(target.value);
         Update_Display();
         return;
-    }
+    } 
     if (target.classList.contains('decimal')) {
         Input_Decmial (target.value);
-        Update_Display;
+        Update_Display();
         return;
        }
         // ensures that AC clears the numbers from the Calculator
     if (target.classList.contains('all-clear')){
         Calculator_Rest();
-        Update_Display;
+        Update_Display();
         return;
     }
     Input_Digit(target.value);
