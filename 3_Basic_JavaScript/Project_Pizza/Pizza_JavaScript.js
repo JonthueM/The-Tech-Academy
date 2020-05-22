@@ -1,5 +1,6 @@
 function getReceipt() {
-
+	// This initializes our string so it can get passed from  
+	// function to function, growing line by line into a full receipt
 	var text1 = "<h3>You Ordered:</h3>";
 	var runningTotal = 0;
 	var sizeTotal = 0;
@@ -25,7 +26,7 @@ function getReceipt() {
 	console.log(selectedSize+" = $"+sizeTotal+".00");
 	console.log("size text1: "+text1);
 	console.log("subtotal: $"+runningTotal+".00");
-	getTopping(runningTotal,text1);
+	getTopping(runningTotal,text1); // All three of these variables will be passed on to each function
 };
 
 function getTopping(runningTotal,text1) {
