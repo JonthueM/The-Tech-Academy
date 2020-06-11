@@ -29,53 +29,88 @@ Victor Fleming example – where both share the Movie_Name column).
 
 */
 
-CREATE DATABASE Game_db
 
+CREATE DATABASE TEST
+
+USE TEST
+CREATE TABLE Dummy(
+	D_Key INT PRIMARY KEY  NOT NULL IDENTITY (1,1),
+	D_T1 VARCHAR(30)  NOT NULL,
+	D_T2 VARCHAR(30) NOT NULL,
+	D_T3 VARCHAR(30) NOT NULL
+);
+
+USE TEST
+INSERT INTO Dummy (D_T2) VALUES ('Hello'),('World');
+
+
+
+CREATE DATABASE GameApp_db
+CREATE TABLE GCollection (
+	GC_Key INT PRIMARY KEY  NOT NULL IDENTITY (1,1),
+	GC_Title VARCHAR(30)  NOT NULL,
+	GC_Genre VARCHAR(500) NOT NULL,
+	GC_Release_Date VARCHAR(30) NOT NULL,
+	GC_Publisher VARCHAR(30)  NOT NULL,
+	GC_Platforms VARCHAR(500)  NOT NULL,
+	GC_About VARCHAR(500) NOT NULL,
+	GC_Age_Rating VARCHAR(30) NOT NULL,
+	GC_Website VARCHAR(30) NOT NULL
+
+)
+
+
+
+
+
+
+
+
+CREATE DATABASE Game_db
 USE Game_db
+
+
+
+
+CREATE TABLE Creators (
+	c_Key INT PRIMARY KEY  NOT NULL IDENTITY (1,1),
+	c_Studio VARCHAR(30)  NOT NULL,
+	c_Best_Game VARCHAR(30) NOT NULL,
+	c_Founded_Date VARCHAR(30) NOT NULL
+);
 
 CREATE TABLE Series (
 	s_Key INT PRIMARY KEY  NOT NULL IDENTITY (1,1),
 	s_Title VARCHAR(30) NOT NULL,
 	s_Character VARCHAR(20) NOT NULL,
 	s_First_Release VARCHAR(30) NOT NULL,
-	c.Studio int FOREIGN KEY REFERENCES Creators(c.Studio),
+	c_Studio int FOREIGN KEY REFERENCES Creators(c_key),
 );
 
 
-CREATE TABLE Creators (
-	c_Key INT PRIMARY KEY  NOT NULL IDENTITY (1,1).
-	c.Studio VARCHAR(30)  NOT NULL,
-	c.Best_Game VARCHAR(30) NOT NULL,
-	c.Founded_Date VARCHAR(30) NOT NULL
-);
-
-/*
-
-
-*/
-INSERT INTO Series (s_Title, s_Title, s_First_Release, c.Studio)
+INSERT INTO Series (s_Title, s_Title, s_First_Release, c_Studio)
 VALUES 
-	(Halo, John 117, November 15 2001, Bungie),
-	(Deus Ex, Various, June 23 2000, Ion Storm),
-	(Mass Effect, Commander Shepard, November 20 2007, BioWare Entertainment),
-	(Titanfall, MacAllan, March 11 2014, Respawn Entertainment),
-	(Midnight Club, You, October 26 2000, Rockstar Games)
+	('Halo', 'John 117', 'November 15 2001', 'Bungie'),
+	('Deus Ex', 'Various', 'June 23 2000', 'Ion Storm'),
+	('Mass Effect', 'Commander Shepard', 'November 20 2007', 'BioWare Entertainment'),
+	('Titanfall', 'MacAllan', 'March 11 2014', 'Respawn Entertainment'),
+	('Midnight Club', 'You', 'October 26 2000', 'Rockstar Games')
 	
 	;
 
 
-INSERT INTO Creators (c.Studio, c.Best_Game, c.Founded_Date)
+INSERT INTO Creators (c_Studio, c_Best_Game, c_Founded_Date)
 VALUES 
-	(Bungie, Halo 2, June 19,1991),
-	(Ion Storm, Deus Ex Invisible War, November 15,1996),
-	(BioWare Entertainment,  Mass Effect 2, February 1995),
-	(Respawn Entertainment, Titanfall 2, April 12 2010),
-	(Rockstar Games, Grand Theft 2,  December 1998)
+	('Bungie', 'Halo 2', 'June 19,1991'),
+	('Ion Storm', 'Deus Ex Invisible War', 'November 15,1996'),
+	('BioWare Entertainment',  'Mass Effect 2', 'February 1995'),
+	('Respawn Entertainment', 'Titanfall 2', 'April 12 2010'),
+	('Rockstar Games', 'Grand Theft 2',  'December 1998')
 
 	;
 
 
 	SELECT Series.s_Title, Creators.c_Studio
 	FROM Series
-	INNER JOIN Creators
-	ON Series.s_Key = Creators.c_Key;
+	INNER JOIN Creators ON Series.s_Key = Creators.c_Key;
+
