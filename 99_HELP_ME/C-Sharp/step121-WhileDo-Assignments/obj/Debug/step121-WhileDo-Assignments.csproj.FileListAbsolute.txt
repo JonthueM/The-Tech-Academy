@@ -1,0 +1,2 @@
+C:\cSharpProjects\1 - Assignments\step121-WhileDo-Assignments\obj\Debug\step121-WhileDo-Assignments.csprojAssemblyReference.cache
+C:\cSharpProjects\1 - Assignments\step121-WhileDo-Assignments\obj\Debug\step121-WhileDo-Assignments.csproj.CoreCompileInputs.cache
