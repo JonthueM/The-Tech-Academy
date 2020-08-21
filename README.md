@@ -1,5 +1,7 @@
 # The-Tech-Academy
 <a href="https://www.learncodinganywhere.com/"><img src="https://www.learncodinganywhere.com/images/circleLogo.jpg" alt="The Tech Academy"></a>
+
+
 Project: Front-End
 Description: Learn and demostrate the use of HTML, CSS & JavaScript.
 
